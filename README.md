@@ -6,6 +6,9 @@
 ![Data Analysis](https://img.shields.io/badge/Data%20Analysis-End--to--End-0F766E)
 
 
+[ Access Google Drive Repository Assets](https://drive.google.com/drive/folders/119IWA15YBdNa5Frkm7gGyGopJv1cUc7h?usp=drive_link)
+
+
 
 ## Project Overview
 
