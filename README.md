@@ -5,6 +5,8 @@
 ![DAX](https://img.shields.io/badge/DAX-Measures-1F4E79)
 ![Data Analysis](https://img.shields.io/badge/Data%20Analysis-End--to--End-0F766E)
 
+
+
 ## Project Overview
 
 This project analyzes an e-commerce business using **SQL Server, Power BI, and DAX** to understand sales performance, customer behavior, product performance, and operational distribution.
@@ -437,91 +439,49 @@ The Power BI report contains 3 pages.
 
 ## Page 1 — Executive Sales Overview
 
-### Purpose
+![Executive Sales Overview](https://github.com/saud123/Ecommerce-Case-Study-SQP-POWER-BI-/blob/main/Executive.JPG?raw=true)
 
-Provide management with a high-level view of overall sales performance.
+### Executive Dashboard: 
+Overall Sales & Profit PerformanceStrong Profitability with Recent Contraction: The e-commerce division generated a highly efficient 51.91% profit margin ($3.10M profit out of $5.97M total revenue). However, the Revenue & Profit Trend visualization highlights that after reaching a peak in 2023, both revenue and profitability experienced a noticeable decline moving into 2024.
 
-### KPIs
+### Category and Product Revenue Drivers: 
+Revenue is highly concentrated in premium apparel. Outerwear & Coats ($0.73M) and Jeans ($0.69M) are the top two revenue-generating product categories, heavily supported by high-performing individual items from The North Face and Nike Women's lines.
 
-* Total Revenue
-* Total Cost
-* Total Profit
-* Profit Margin
-* Sales Orders
-* Return Rate / Cancellation Rate
-
-### Visuals
-
-* Revenue by Product Category
-* Revenue by Gender
-* Order Status Distribution
-* Revenue vs Profit by Year
-* Revenue Trend
-* Additional product-level revenue analysis
+### Operational Leakage Risks: 
+Despite booking 69K total orders, the business faces operational inefficiencies with a 10.01% return rate. Combined with a high volume of cancelled and returned items visible in the Order Status Distribution chart, these factors pose significant risks to maintaining long-term profit margins.
 
 > Note: the final report layout may contain four primary analytical charts plus supporting visuals depending on the final dashboard arrangement.
 
 ---
 
 ## Page 2 — Customer & Order Analysis
+![Order Analysis Overview](https://github.com/saud123/Ecommerce-Case-Study-SQP-POWER-BI-/blob/main/Order%20Analysis.JPG?raw=true)
 
-### Purpose
 
-Understand who the customers are and how they interact with the ordering process.
+### High Customer Churn & Low Retention: 
+While the platform attracted 100.00K total customers, the unique net customer count drops to 52.91K, with a significant chunk (53K shoppers) buying only once. This indicates strong initial acquisition but low customer lifetime value, as top buyers frequently churn after a year.
 
-### KPIs
+### Demographic and Regional Concentrations: 
+E-commerce sales lean male, generating $3.16M (52.98%) of revenue compared to female shoppers at $2.81M (47.02%). Geographically, the customer base is heavily concentrated in China and the United States, which dominate the top 5 revenue-generating countries.
 
-* Total Customers
-* Sales Orders
-* Average Order Value
-* Average Unit Retail / related order-value metric
-
-### Visuals
-
-* Revenue by Gender
-* Sales Orders by Age Group
-* Revenue by Customer State
-* Customers by Traffic Source
-* Order Status by Gender
-
-### Slicers
-
-* Year
-* Gender
-
----
+### Search Traffic Dominance: 
+The Customers by Traffic Source metric shows that Search is overwhelmingly the dominant driver for both total orders and customer acquisition. Traditional marketing channels like Organic, Facebook, and Email lag far behind, showing unexploited potential for targeted remarketing campaigns.---
 
 ## Page 3 — Product & Operations Analysis
 
-### Purpose
+![Product Analysis Overview](https://github.com/saud123/Ecommerce-Case-Study-SQP-POWER-BI-/blob/main/Product.JPG?raw=true)
 
-Identify the products, brands, categories, and distribution centers contributing to business performance.
 
-### KPIs
+### High Inventory Overreliance & Unsold SKUs: 
+Out of a catalog of 29K total products, only 51.08% (28K) are actively selling, leaving an absolute volume of 1,014 items completely unsold. This underutilization points to potential deadstock or inefficiencies in product-market matching.
 
-* Total Products
-* Unsold Products
-* Selling Products
-* Average Product Revenue
-* Average Product Margin %
-* Total Brands
+### Extreme Brand Concentration:
+Revenue is dangerously dependent on just two major brands. The North Face accounts for 45.62% and Canada Goose accounts for 25.93% of total revenue. Combined, these two brands bring in over 71% of the company's entire money flow, creating a major structural risk if supply lines or consumer affinity for them changes.
 
-### Visuals
+### Fulfillment Centralization: 
+Supply chain logistics rely heavily on a single node. The Houston, TX warehouse handles the massive lion's share of distributions, dwarfing secondary centers like Memphis, TN and Philadelphia, PA. This central bottleneck increases vulnerability to regional disruptions or localized shipping overloads.
 
-* Revenue by Product Category
-* Top 10 Products by Revenue
-* Top 10 Brands by Revenue
-* Revenue by Distribution Center
-* Revenue vs Profit by Category
-
-### Slicers
-
-* Year
-* Product Category
-
----
-
-# Key Findings
+### Product & Operations Analysis
 
 ## 1. Revenue grew strongly through 2023
 
@@ -797,55 +757,27 @@ Recommendations
 
 ---
 
-# Project Structure
-
-Recommended GitHub repository structure:
-
-```text
-ecommerce-sales-powerbi/
-│
-├── README.md
-│
-├── data/
-│   └── source_files/
-│
-├── sql/
-│   ├── 01_data_validation.sql
-│   ├── 02_sales_analysis.sql
-│   ├── 03_customer_analysis.sql
-│   ├── 04_product_analysis.sql
-│   └── 05_operations_analysis.sql
-│
-├── powerbi/
-│   └── Ecommerce_Sales_Dashboard.pbix
-│
-├── screenshots/
-│   ├── page1_executive_overview.png
-│   ├── page2_customer_analysis.png
-│   └── page3_product_operations.png
-│
-└── documentation/
-    └── Ecommerce_Sales_PowerBI_Case_Study.pdf
-```
 
 ---
 
 # Dashboard Preview
 
-Add your dashboard screenshots here:
-
-```markdown
 ## Dashboard Preview
 
 ### Executive Sales Overview
-![Executive Sales Overview](screenshots/page1_executive_overview.png)
+![Executive Sales Overview](https://github.com/saud123/Ecommerce-Case-Study-SQP-POWER-BI-/blob/main/Executive.JPG?raw=true)
+
 
 ### Customer & Order Analysis
-![Customer & Order Analysis](screenshots/page2_customer_analysis.png)
+![Order Analysis Overview](https://github.com/saud123/Ecommerce-Case-Study-SQP-POWER-BI-/blob/main/Order%20Analysis.JPG?raw=true)
 
 ### Product & Operations Analysis
-![Product & Operations Analysis](screenshots/page3_product_operations.png)
+![Product Analysis Overview](https://github.com/saud123/Ecommerce-Case-Study-SQP-POWER-BI-/blob/main/Product.JPG?raw=true)
+
 ```
+
+
+
 
 ---
 
