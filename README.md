@@ -29,19 +29,18 @@ The final Power BI solution contains **3 analytical pages** designed for both ex
 
 ## Business Problem
 
-An e-commerce company needs a consolidated view of its sales and customer data to answer key business questions:
+The e-commerce business has a large volume of transactional, customer, product, inventory, and operational data, but lacks a consolidated analytical view of its performance. Management needs to understand **where revenue and profit are being generated, which customer segments are driving sales, which products and brands perform best, and how order outcomes vary across the business**.
 
-* How much revenue and profit is the business generating?
-* How are sales changing over time?
-* Which product categories, products, and brands generate the most revenue?
-* Who are the customers and where are they located?
-* How does ordering behavior vary across customer segments?
-* How are orders distributed across statuses?
-* Which distribution centers contribute the most revenue?
+The key business questions are:
+
+* How are **revenue, cost, profit, and profit margin** performing over time?
+* Which **product categories, individual products, and brands** generate the most revenue?
+* Who are the major **customer segments** based on gender, age, geography, and traffic source?
+* What proportion of orders are **shipped, completed, processing, cancelled, or returned**?
+* Which **distribution centers** contribute most to revenue?
 * Are there products in the catalog that generate little or no completed sales?
-* Which areas require further investigation for growth, retention, and operational improvement?
 
-The objective was to transform several operational tables into a **decision-oriented Power BI dashboard** rather than simply producing descriptive charts.
+The objective of this project is to transform the raw e-commerce data into a **reliable SQL-based analytical layer and interactive Power BI dashboard** that enables management to monitor performance, identify important patterns, and investigate areas requiring further business analysis.
 
 ---
 
